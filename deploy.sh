@@ -110,10 +110,12 @@ fi
 
 # -------------
 
-( cd systemd && make install )
+pushd udev
+if [ "${DO_INSTALL:-}" = "yes" ]; then sudo make install ; fi
+popd
 
 # -------------
 
-( cd udev && sudo install -v -m=0644 * /etc/udev/rules.d )
-
-
+pushd systemd
+if [ "${DO_INSTALL:-}" = "yes" ]; then make install ; fi
+popd
