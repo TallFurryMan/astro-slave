@@ -108,3 +108,12 @@ then
 	popd
 fi
 
+# -------------
+
+( cd systemd && make install )
+
+# -------------
+
+( cd udev && sudo install -v -m=0644 * /etc/udev/rules.d )
+
+
