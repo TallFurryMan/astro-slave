@@ -1,0 +1,2 @@
+SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="04b4", ATTR{idProduct}=="df2d", SYMLINK+="atik314e" RUN+="/bin/systemctl start indi_atik_ccd@7624.service"
+SUBSYSTEM=="usb", ACTION=="remove", ENV{ID_MODEL}=="df2d", RUN+="/bin/systemctl stop indi_atik_ccd@7624.service"

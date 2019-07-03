@@ -1,0 +1,2 @@
+ACTION=="add",    SUBSYSTEM=="tty", ENV{ID_USB_DRIVER}=="pl2303", SYMLINK+="tty.eqmod", RUN+="/bin/systemctl start indi_eqmod_telescope"
+ACTION=="remove", SUBSYSTEM=="tty", ENV{ID_USB_DRIVER}=="pl2303",                       RUN+="/bin/systemctl stop indi_eqmod_telescope"

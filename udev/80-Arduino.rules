@@ -1,0 +1,2 @@
+ACTION=="add",    SUBSYSTEM=="tty", ENV{ID_SERIAL_SHORT}=="A904TKQQ", SYMLINK+="tty.arduino", RUN+="/bin/systemctl start indi_moonlite_focus@7624.service"
+ACTION=="remove", SUBSYSTEM=="tty", ENV{ID_SERIAL_SHORT}=="A904TKQQ",                         RUN+="/bin/systemctl stop indi_moonlite_focus@7624.service"
