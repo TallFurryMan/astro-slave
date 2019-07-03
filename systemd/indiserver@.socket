@@ -5,7 +5,7 @@ Description=INDI server fifo
 WantedBy=sockets.target
 
 [Socket]
-ListenFIFO=/var/run/indiserver.fifo.%i
+ListenFIFO=/tmp/indiserver.fifo.%i
 SocketUser=indi
 SocketMode=0600
 Service=indiserver@%i.service

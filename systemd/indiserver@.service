@@ -1,6 +1,6 @@
 [Unit]
 Description=INDI Server
-After=network.target indiserver@%i.socket
+After=network.target
 Requires=indiserver@%i.socket
 
 [Install]
@@ -15,4 +15,5 @@ Sockets=indiserver@%i.socket
 StandardOutput=journal
 StandardError=journal
 RestartSec=5
-ExecStart=/usr/local/bin/indiserver -v -p %i -f /var/run/indiserver.fifo.%i indi_watchdog indi_astrometry
+ExecStart=/usr/local/bin/indiserver -v -p %i -f /tmp/indiserver.fifo.%i indi_watchdog indi_astrometry
+ExecStartPost=!/sbin/udevadm trigger
