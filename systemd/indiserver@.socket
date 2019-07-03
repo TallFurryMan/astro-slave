@@ -1,0 +1,12 @@
+[Unit]
+Description=INDI server fifo
+
+[Install]
+WantedBy=sockets.target
+
+[Socket]
+ListenFIFO=/var/run/indiserver.fifo.%i
+SocketUser=indi
+SocketMode=0600
+Service=indiserver@%i.service
+RemoveOnStop=true

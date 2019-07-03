@@ -1,0 +1,16 @@
+[Unit]
+Description=INDI Filterwheel Simulator driver
+After=network.target
+Requires=indiserver@%i.socket
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+# User=indi
+Sockets=indiserver@%i.socket
+StandardOutput=socket
+ExecStart=/bin/echo "start indi_wheel_simulator"
+ExecStop=/bin/echo "stop indi_wheel_simulator"

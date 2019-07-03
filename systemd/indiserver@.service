@@ -1,0 +1,18 @@
+[Unit]
+Description=INDI Server
+After=network.target indiserver@%i.socket
+Requires=indiserver@%i.socket
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+# User=indi
+Sockets=indiserver@%i.socket
+#StandardInput=fd:indiserver-fifo@%i.socket
+#StandardInput=socket
+StandardOutput=journal
+StandardError=journal
+RestartSec=5
+ExecStart=/usr/local/bin/indiserver -v -p %i -f /var/run/indiserver.fifo.%i indi_watchdog indi_astrometry
