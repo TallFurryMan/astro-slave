@@ -1,0 +1,122 @@
+<INDIDriver>
+    <newSwitchVector device="MoonLite" name="DEBUG">
+        <oneSwitch name="ENABLE">
+Off
+        </oneSwitch>
+        <oneSwitch name="DISABLE">
+On
+        </oneSwitch>
+    </newSwitchVector>
+    <newNumberVector device="MoonLite" name="POLLING_PERIOD">
+        <oneNumber name="PERIOD_MS">
+500
+        </oneNumber>
+    </newNumberVector>
+    <newSwitchVector device="MoonLite" name="CONNECTION_MODE">
+        <oneSwitch name="CONNECTION_SERIAL">
+      On
+        </oneSwitch>
+        <oneSwitch name="CONNECTION_TCP">
+      Off
+        </oneSwitch>
+    </newSwitchVector>
+    <newTextVector device="MoonLite" name="DEVICE_PORT">
+        <oneText name="PORT">
+/dev/tty.arduino
+        </oneText>
+    </newTextVector>
+    <newSwitchVector device="MoonLite" name="DEVICE_BAUD_RATE">
+        <oneSwitch name="9600">
+On
+        </oneSwitch>
+        <oneSwitch name="19200">
+Off
+        </oneSwitch>
+        <oneSwitch name="38400">
+Off
+        </oneSwitch>
+        <oneSwitch name="57600">
+Off
+        </oneSwitch>
+        <oneSwitch name="115200">
+Off
+        </oneSwitch>
+        <oneSwitch name="230400">
+Off
+        </oneSwitch>
+    </newSwitchVector>
+    <newSwitchVector device="MoonLite" name="DEVICE_AUTO_SEARCH">
+        <oneSwitch name="ENABLED">
+Off
+        </oneSwitch>
+        <oneSwitch name="DISABLED">
+On
+        </oneSwitch>
+    </newSwitchVector>
+    <newSwitchVector device="MoonLite" name="DEBUG_LEVEL">
+        <oneSwitch name="DBG_ERROR">
+On
+        </oneSwitch>
+        <oneSwitch name="DBG_WARNING">
+On
+        </oneSwitch>
+        <oneSwitch name="DBG_SESSION">
+On
+        </oneSwitch>
+        <oneSwitch name="DBG_DEBUG">
+Off
+        </oneSwitch>
+    </newSwitchVector>
+    <newSwitchVector device="MoonLite" name="LOGGING_LEVEL">
+        <oneSwitch name="LOG_ERROR">
+On
+        </oneSwitch>
+        <oneSwitch name="LOG_WARNING">
+On
+        </oneSwitch>
+        <oneSwitch name="LOG_SESSION">
+On
+        </oneSwitch>
+        <oneSwitch name="LOG_DEBUG">
+Off
+        </oneSwitch>
+    </newSwitchVector>
+    <newSwitchVector device="MoonLite" name="LOG_OUTPUT">
+        <oneSwitch name="CLIENT_DEBUG">
+On
+        </oneSwitch>
+        <oneSwitch name="FILE_DEBUG">
+Off
+        </oneSwitch>
+    </newSwitchVector>
+    <newNumberVector device="MoonLite" name="Presets">
+        <oneNumber name="PRESET_1">
+0
+        </oneNumber>
+        <oneNumber name="PRESET_2">
+0
+        </oneNumber>
+        <oneNumber name="PRESET_3">
+0
+        </oneNumber>
+    </newNumberVector>
+    <newSwitchVector device="MoonLite" name="USEJOYSTICK">
+        <oneSwitch name="ENABLE">
+Off
+        </oneSwitch>
+        <oneSwitch name="DISABLE">
+On
+        </oneSwitch>
+    </newSwitchVector>
+    <newTextVector device="MoonLite" name="JOYSTICKSETTINGS">
+        <oneText name="Focus In">
+BUTTON_1
+        </oneText>
+        <oneText name="Focus Out">
+BUTTON_2
+        </oneText>
+        <oneText name="Abort Focus">
+BUTTON_3
+        </oneText>
+    </newTextVector>
+</INDIDriver>

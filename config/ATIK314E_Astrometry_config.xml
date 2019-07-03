@@ -1,0 +1,15 @@
+<INDIDriver>
+<newTextVector device='Astrometry' name='ACTIVE_DEVICES'>
+  <oneText name='ACTIVE_CCD'>
+      CCD Simulator
+  </oneText>
+</newTextVector>
+<newTextVector device='Astrometry' name='ASTROMETRY_SETTINGS'>
+  <oneText name='ASTROMETRY_SETTINGS_BINARY'>
+      /usr/local/astrometry/bin/solve-field
+  </oneText>
+  <oneText name='ASTROMETRY_SETTINGS_OPTIONS'>
+      -O --no-plots --no-verify --resort --no-fits2fits --downsample 2 -L 19.46 -H 25.947 -u aw -3 201.175 -4 54.8367 -5 10
+  </oneText>
+</newTextVector>
+</INDIDriver>

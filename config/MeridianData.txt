@@ -1,0 +1,4 @@
+# Meridian Data for device EQMod Mount
+# Location: longitude= 358:18:00  48:13:00 latitude=  48:13:00
+# Created on 2018-06-17T21:03:31 by EQMod Mount
+6688791 10061565

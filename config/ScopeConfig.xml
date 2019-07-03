@@ -1,0 +1,21 @@
+<scopeconfig>
+    <device name="EQMod Mount">
+        <config1>
+            <scopefoc>
+480.000000
+            </scopefoc>
+            <scopeap>
+80.000000
+            </scopeap>
+            <gscopefoc>
+162.000000
+            </gscopefoc>
+            <gscopeap>
+50.000000
+            </gscopeap>
+            <label>
+Melesse
+            </label>
+        </config1>
+    </device>
+</scopeconfig>

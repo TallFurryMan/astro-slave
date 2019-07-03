@@ -1,0 +1,37 @@
+<INDIDriver>
+<newNumberVector device='WatchDog' name='WATCHDOG_HEARTBEAT'>
+  <oneNumber name='WATCHDOG_HEARTBEAT_VALUE'>
+      10
+  </oneNumber>
+</newNumberVector>
+<newTextVector device='WatchDog' name='WATCHDOG_SETTINGS'>
+  <oneText name='INDISERVER_HOST'>
+      localhost
+  </oneText>
+  <oneText name='INDISERVER_PORT'>
+      7624
+  </oneText>
+  <oneText name='SHUTDOWN_SCRIPT'>
+      
+  </oneText>
+</newTextVector>
+<newTextVector device='WatchDog' name='ACTIVE_DEVICES'>
+  <oneText name='ACTIVE_TELESCOPE'>
+      Telescope Simulator
+  </oneText>
+  <oneText name='ACTIVE_DOME'>
+      Dome Simulator
+  </oneText>
+</newTextVector>
+<newSwitchVector device='WatchDog' name='WATCHDOG_SHUTDOWN'>
+  <oneSwitch name='PARK_MOUNT'>
+      On
+  </oneSwitch>
+  <oneSwitch name='PARK_DOME'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='EXECUTE_SCRIPT'>
+      Off
+  </oneSwitch>
+</newSwitchVector>
+</INDIDriver>

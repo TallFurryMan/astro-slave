@@ -1,0 +1,81 @@
+<INDIDriver>
+<newSwitchVector device='MoonLite' name='DEBUG'>
+  <oneSwitch name='ENABLE'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='DISABLE'>
+      On
+  </oneSwitch>
+</newSwitchVector>
+<newSwitchVector device='MoonLite' name='DEBUG_LEVEL'>
+  <oneSwitch name='DBG_ERROR'>
+      On
+  </oneSwitch>
+  <oneSwitch name='DBG_WARNING'>
+      On
+  </oneSwitch>
+  <oneSwitch name='DBG_SESSION'>
+      On
+  </oneSwitch>
+  <oneSwitch name='DBG_DEBUG'>
+      Off
+  </oneSwitch>
+</newSwitchVector>
+<newSwitchVector device='MoonLite' name='LOGGING_LEVEL'>
+  <oneSwitch name='LOG_ERROR'>
+      On
+  </oneSwitch>
+  <oneSwitch name='LOG_WARNING'>
+      On
+  </oneSwitch>
+  <oneSwitch name='LOG_SESSION'>
+      On
+  </oneSwitch>
+  <oneSwitch name='LOG_DEBUG'>
+      Off
+  </oneSwitch>
+</newSwitchVector>
+<newSwitchVector device='MoonLite' name='LOG_OUTPUT'>
+  <oneSwitch name='CLIENT_DEBUG'>
+      On
+  </oneSwitch>
+  <oneSwitch name='FILE_DEBUG'>
+      Off
+  </oneSwitch>
+</newSwitchVector>
+<newTextVector device='MoonLite' name='DEVICE_PORT'>
+  <oneText name='PORT'>
+      /dev/ttyACM0
+  </oneText>
+</newTextVector>
+<newNumberVector device='MoonLite' name='Presets'>
+  <oneNumber name='Preset 1'>
+      0
+  </oneNumber>
+  <oneNumber name='Preset 2'>
+      0
+  </oneNumber>
+  <oneNumber name='Preset 3'>
+      0
+  </oneNumber>
+</newNumberVector>
+<newSwitchVector device='MoonLite' name='USEJOYSTICK'>
+  <oneSwitch name='ENABLE'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='DISABLE'>
+      On
+  </oneSwitch>
+</newSwitchVector>
+<newTextVector device='MoonLite' name='JOYSTICKSETTINGS'>
+  <oneText name='Focus In'>
+      BUTTON_1
+  </oneText>
+  <oneText name='Focus Out'>
+      BUTTON_2
+  </oneText>
+  <oneText name='Abort Focus'>
+      BUTTON_3
+  </oneText>
+</newTextVector>
+</INDIDriver>

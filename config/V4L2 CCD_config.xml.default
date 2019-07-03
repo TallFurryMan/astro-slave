@@ -1,0 +1,70 @@
+<INDIDriver>
+<newTextVector device='V4L2 CCD' name='ACTIVE_DEVICES'>
+  <oneText name='ACTIVE_TELESCOPE'>
+      Telescope Simulator
+  </oneText>
+  <oneText name='ACTIVE_FOCUSER'>
+      Focuser Simulator
+  </oneText>
+  <oneText name='ACTIVE_FILTER'>
+      CCD Simulator
+  </oneText>
+</newTextVector>
+<newSwitchVector device='V4L2 CCD' name='UPLOAD_MODE'>
+  <oneSwitch name='UPLOAD_CLIENT'>
+      On
+  </oneSwitch>
+  <oneSwitch name='UPLOAD_LOCAL'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='UPLOAD_BOTH'>
+      Off
+  </oneSwitch>
+</newSwitchVector>
+<newTextVector device='V4L2 CCD' name='UPLOAD_SETTINGS'>
+  <oneText name='UPLOAD_DIR'>
+      /home/indi
+  </oneText>
+  <oneText name='UPLOAD_PREFIX'>
+      IMAGE_XXX
+  </oneText>
+</newTextVector>
+<newSwitchVector device='V4L2 CCD' name='TELESCOPE_TYPE'>
+  <oneSwitch name='TELESCOPE_PRIMARY'>
+      On
+  </oneSwitch>
+  <oneSwitch name='TELESCOPE_GUIDE'>
+      Off
+  </oneSwitch>
+</newSwitchVector>
+<newSwitchVector device='V4L2 CCD' name='CCD_COMPRESSION'>
+  <oneSwitch name='CCD_COMPRESS'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='CCD_RAW'>
+      On
+  </oneSwitch>
+</newSwitchVector>
+<newNumberVector device='V4L2 CCD' name='CCD_FRAME'>
+  <oneNumber name='X'>
+      0
+  </oneNumber>
+  <oneNumber name='Y'>
+      0
+  </oneNumber>
+  <oneNumber name='WIDTH'>
+      640
+  </oneNumber>
+  <oneNumber name='HEIGHT'>
+      480
+  </oneNumber>
+</newNumberVector>
+<newNumberVector device='V4L2 CCD' name='CCD_BINNING'>
+  <oneNumber name='HOR_BIN'>
+      1
+  </oneNumber>
+  <oneNumber name='VER_BIN'>
+      1
+  </oneNumber>
+</newNumberVector>
+</INDIDriver>

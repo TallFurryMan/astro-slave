@@ -1,0 +1,15 @@
+<INDIDriver>
+<newTextVector device='Astrometry' name='ACTIVE_DEVICES'>
+  <oneText name='ACTIVE_CCD'>
+      Atik 314E CCD
+  </oneText>
+</newTextVector>
+<newTextVector device='Astrometry' name='ASTROMETRY_SETTINGS'>
+  <oneText name='ASTROMETRY_SETTINGS_BINARY'>
+      /usr/local/astrometry/bin/solve-field
+  </oneText>
+  <oneText name='ASTROMETRY_SETTINGS_OPTIONS'>
+      -O --no-plots --no-verify --downsample 2 -L 33.2128 -H 49.1334 -u aw -3 84.1133 -4 -5.25531 -5 30 -vv
+  </oneText>
+</newTextVector>
+</INDIDriver>

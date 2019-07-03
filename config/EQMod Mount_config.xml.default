@@ -1,0 +1,93 @@
+<INDIDriver>
+<newTextVector device='EQMod Mount' name='ACTIVE_DEVICES'>
+  <oneText name='ACTIVE_GPS'>
+      GPS Simulator
+  </oneText>
+</newTextVector>
+<newTextVector device='EQMod Mount' name='DEVICE_PORT'>
+  <oneText name='PORT'>
+      /dev/ttyUSB0
+  </oneText>
+</newTextVector>
+<newSwitchVector device='EQMod Mount' name='TELESCOPE_BAUD_RATE'>
+  <oneSwitch name='9600'>
+      On
+  </oneSwitch>
+  <oneSwitch name='19200'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='38400'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='57600'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='115200'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='230400'>
+      Off
+  </oneSwitch>
+</newSwitchVector>
+<newNumberVector device='EQMod Mount' name='GEOGRAPHIC_COORD'>
+  <oneNumber name='LAT'>
+      48.11670000000000158
+  </oneNumber>
+  <oneNumber name='LONG'>
+      358.96699999999998454
+  </oneNumber>
+  <oneNumber name='ELEV'>
+      0
+  </oneNumber>
+</newNumberVector>
+<newNumberVector device='EQMod Mount' name='TELESCOPE_INFO'>
+  <oneNumber name='TELESCOPE_APERTURE'>
+      80
+  </oneNumber>
+  <oneNumber name='TELESCOPE_FOCAL_LENGTH'>
+      480
+  </oneNumber>
+  <oneNumber name='GUIDER_APERTURE'>
+      80
+  </oneNumber>
+  <oneNumber name='GUIDER_FOCAL_LENGTH'>
+      480
+  </oneNumber>
+</newNumberVector>
+<newSwitchVector device='EQMod Mount' name='USEJOYSTICK'>
+  <oneSwitch name='ENABLE'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='DISABLE'>
+      On
+  </oneSwitch>
+</newSwitchVector>
+<newTextVector device='EQMod Mount' name='JOYSTICKSETTINGS'>
+  <oneText name='MOTIONDIR'>
+      JOYSTICK_1
+  </oneText>
+  <oneText name='SLEWPRESET'>
+      JOYSTICK_2
+  </oneText>
+  <oneText name='ABORTBUTTON'>
+      BUTTON_1
+  </oneText>
+  <oneText name='PARKBUTTON'>
+      BUTTON_2
+  </oneText>
+  <oneText name='UNPARKBUTTON'>
+      BUTTON_3
+  </oneText>
+</newTextVector>
+<newSwitchVector device='EQMod Mount' name='ALIGNMODE'>
+  <oneSwitch name='NOALIGN'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='ALIGNNEAREST'>
+      Off
+  </oneSwitch>
+  <oneSwitch name='ALIGNNSTAR'>
+      On
+  </oneSwitch>
+</newSwitchVector>
+</INDIDriver>
