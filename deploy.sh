@@ -1,17 +1,7 @@
 #!/bin/bash -eux
 
-
-sudo apt-get -y install libnova-dev libcfitsio-dev libusb-1.0-0-dev zlib1g-dev libgsl-dev \
-	build-essential cmake git libjpeg-dev libcurl4-gnutls-dev libtheora-dev libraw-dev \
-	pkgconf libswscale-dev libtiff-dev libgphoto2-dev libftdi1-dev libdc1394-22-dev \
-	libboost-all-dev libgps-dev libfftw3-dev \
-	libavdevice-dev libavformat-dev libavcodec-dev \
-	librtlsdr-dev
-
-sudo apt-get -y install libwxgtk3.0-dev wx-common wx3.0-i18n
-
-sudo apt-get -y install gettext
-
+DO_INSTALL=${DO_INSTALL:-nope}
+DO_INDEXES=${DO_INDEXES:-nope}
 
 # -------------
 
@@ -23,6 +13,13 @@ then
 fi
 
 # -------------
+
+sudo apt-get -y install libnova-dev libcfitsio-dev libusb-1.0-0-dev zlib1g-dev libgsl-dev \
+	build-essential cmake git libjpeg-dev libcurl4-gnutls-dev libtheora-dev libraw-dev \
+	pkgconf libswscale-dev libtiff-dev libgphoto2-dev libftdi1-dev libdc1394-22-dev \
+	libboost-all-dev libgps-dev libfftw3-dev \
+	libavdevice-dev libavformat-dev libavcodec-dev \
+	librtlsdr-dev
 
 folder="indi"
 if [ ! -d "$folder" ]
@@ -61,6 +58,8 @@ then
 fi
 
 # -------------
+
+sudo apt-get -y install libwxgtk3.0-dev wx-common wx3.0-i18n gettext
 
 folder="phd2"
 [ ! -d "$folder" ] &&
@@ -107,6 +106,41 @@ then
        	if [ "${DO_INSTALL:-}" = "yes" ]; then sudo make install ; fi
 	popd
 fi
+
+# -------------
+
+sudo apt-get install -y netpbm libcairo2-dev libpng-dev libpng-tools python-numpy
+
+folder="astrometry"
+if [ ! -d "$folder" ]
+then
+	git clone https://github.com/TallFurryMan/astrometry.net.git "$folder"
+	pushd "$folder"
+	git remote add upstream https://github.com/dstndstn/astrometry.net.git
+	git checkout -tb 0.78
+	popd
+fi
+
+if [ -d "$folder" ]
+then
+	pushd "$folder"
+	#git checkout melesse-stable || echo "NO MELESSE-STABLE BRANCH - BYPASSING"
+	git pull
+	popd
+fi
+
+if [ "$DO_INDEXES" = "yes" ]
+then
+	pushd "index_files"
+	./sync_indexes.sh
+	rsync -av index*.fits "../$folder"
+	popd
+fi
+
+pushd "$folder"
+./configure && make all
+if [ "$DO_INSTALL" == "yes" ]; then sudo make install install-indexes ; fi
+popd
 
 # -------------
 
