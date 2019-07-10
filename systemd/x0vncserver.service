@@ -1,0 +1,12 @@
+[Unit]
+Description=Remote desktop service (VNC)
+After=syslog.target network.target
+
+[Service]
+Type=forking
+User=indi
+Restart=always
+ExecStart=/bin/sh -c 'sleep 60 ; /usr/bin/x0vncserver -display :0 -rfbport 5900 -passwordfile /home/tallfurryman/.vnc/passwd &'
+
+[Install]
+WantedBy=multi-user.target

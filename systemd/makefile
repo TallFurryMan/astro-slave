@@ -23,6 +23,12 @@ install: all
 	systemctl --user --no-pager status $(SCK7624) $(SCK7625)
 	-systemctl --user --no-pager status $(SRV7624) $(SRV7625)
 
+install-vnc:
+	sudo apt-get install -y tigervnc-standalone-server
+	sudo install -Dv -m=0644 --target-directory /etc/systemd/system/ x0vncserver.service
+	sudo systemctl enable x0vncserver
+	sudo systemctl start x0vncserver
+
 start:
 	if ! systemctl --user is-active $(SCK7624) ; then echo "Activating indiserver socket..." ; systemctl --user restart $(SCK7624) ; fi
 	systemctl --user --no-pager status $(SCK7624)
