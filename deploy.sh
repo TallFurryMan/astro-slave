@@ -40,7 +40,9 @@ fi
 
 build_folder="${folder}_build"
 mkdir -p "$build_folder"
-if ( cd "$build_folder" && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local "../$folder/libindi" )
+cmake_settings="-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local"
+indi_settings="-DWITH_MI=Off -DWITH_FLI=Off -DWITH_SBIG=Off -DWITH_INOVAPLX=Off -DWITH_APOGEE=Off -DWITH_FFMV=Off -DWITH_QHY=Off -DWITH_SSAG=Off -DWITH_QSI=Off -DWITH_FISHCAMP=Off -DWITH_GPSD=Off -DWITH_DSI=Off -DWITH_ASICAM=Off -DWITH_ASTROMECHFOC=Off -DWITH_LIMESDR=Off -DWITH_RTLSDR=Off -DWITH_RADIOSIM=Off -DWITH_GPSNMEA=Off -DWITH_ARMADILLO=Off -DWITH_NIGHTSCAPE=Off -DWITH_ATIK=Off -DWITH_TOUPCAM=Off -DWITH_ALTAIRCAM=Off -DWITH_DREAMFOCUSER=Off -DWITH_AVALON=Off -DWITH_BEEFOCUS=Off"
+if ( cd "$build_folder" && cmake $cmake_settings $indi_settings "../$folder/libindi")
 then
 	pushd "$build_folder"
 	make
@@ -49,7 +51,7 @@ then
 fi
 build_folder="${folder}_3rdparty_build"
 mkdir -p "$build_folder"
-if ( cd "$build_folder" && cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local "../$folder/3rdparty" )
+if ( cd "$build_folder" && cmake $cmake_settings $indi_settings "../$folder/3rdparty" )
 then
 	pushd "$build_folder"
 	make
@@ -149,6 +151,8 @@ if [ "${DO_INSTALL:-}" = "yes" ]; then sudo make install ; fi
 popd
 
 # -------------
+
+sudo apt-get install -y tigervnc-scraping-server
 
 pushd systemd
 if [ "${DO_INSTALL:-}" = "yes" ]; then make install ; fi
