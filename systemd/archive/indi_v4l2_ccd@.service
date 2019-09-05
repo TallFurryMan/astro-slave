@@ -1,7 +1,10 @@
 [Unit]
 Description=INDI V4L2 CCD driver
 After=network.target
-Requires=indiserver@%i.socket
+PartOf=indiserver@7625.service
+BindsTo=dev-dmx21.device
+ConditionPathIsSymbolicLink=/dev/dmx21
+StopWhenUnneeded=yes
 
 [Install]
 WantedBy=multi-user.target
@@ -9,7 +12,6 @@ WantedBy=multi-user.target
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-# User=indi
 Sockets=indiserver@%i.socket
 StandardOutput=socket
 ExecStart=/bin/echo "start indi_v4l2_ccd"

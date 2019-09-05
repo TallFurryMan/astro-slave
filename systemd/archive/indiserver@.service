@@ -2,6 +2,7 @@
 Description=INDI Server
 After=network.target
 Requires=indiserver@%i.socket
+Wants=indi_moonlite_focus@%i.service indi_atik_ccd@%i.service indi_eqmod_telescope@%i.service indi_simulator_wheel@%i.service
 
 [Install]
 WantedBy=multi-user.target
@@ -14,6 +15,7 @@ Sockets=indiserver@%i.socket
 #StandardInput=socket
 StandardOutput=journal
 StandardError=journal
-RestartSec=5
+Restart=on-failure
+RestartSec=5s
 ExecStart=/usr/local/bin/indiserver -v -p %i -f /tmp/indiserver.fifo.%i indi_watchdog indi_astrometry
-ExecStartPost=!/sbin/udevadm trigger
+#ExecStartPost=!/sbin/udevadm trigger

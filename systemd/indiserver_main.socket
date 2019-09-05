@@ -1,0 +1,13 @@
+[Unit]
+Description=INDI Main Server fifo
+BindsTo=indiserver_main.service
+
+[Install]
+WantedBy=sockets.target
+
+[Socket]
+ListenFIFO=/tmp/indiserver.fifo.7624
+SocketUser=indi
+SocketMode=0600
+Service=indiserver_main.service
+RemoveOnStop=true

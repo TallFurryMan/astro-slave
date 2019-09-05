@@ -1,11 +1,17 @@
 ACTION=="add", SUBSYSTEM=="usb", ATTRS{idVendor}=="199e", ATTRS{idProduct}=="8101", RUN+="/sbin/modprobe -b uvcvideo"
 
-ACTION=="add", SUBSYSTEM=="drivers", ENV{DEVPATH}=="/bus/usb/drivers/uvcvideo", WAIT_FOR=="new_id", ATTR{new_id}="199e 8101"
+ACTION=="add", SUBSYSTEM=="drivers", ENV{DEVPATH}=="/bus/usb/drivers/uvcvideo", ATTR{new_id}="199e 8101"
 
-#ACTION=="add",    SUBSYSTEM=="video4linux", ENV{ID_MODEL}="DMx_21AU04.AS", SYMLINK+="dmx21", RUN+="/sbin/rc-service indi_dmx21 start"
-#ACTION=="remove", SUBSYSTEM=="video4linux", ENV{ID_MODEL}="DMx_21AU04.AS",                   RUN+="/sbin/rc-service indi_dmx21 stop"
-ACTION=="add",    SUBSYSTEM=="video4linux", ENV{ID_MODEL}=="DMx_21AU04.AS", SYMLINK+="dmx21", RUN+="/bin/systemctl start indi_v4l2_ccd"
-ACTION=="remove", SUBSYSTEM=="video4linux", ENV{ID_MODEL}=="DMx_21AU04.AS",                   RUN+="/bin/systemctl stop indi_v4l2_ccd"
+ACTION=="add",    SUBSYSTEM=="video4linux", ENV{ID_MODEL}=="DMx_21AU04.AS", TAG+="systemd", ENV{SYSTEMD_ALIAS}+="/dev/dmx21", ENV{SYSTEMD_USER_WANTS}="indi_guider_ccd.service", SYMLINK+="dmx21"
 
-ACTION=="add",    SUBSYSTEM=="video4linux", ENV{ID_SERIAL}=="046d_080f_8A835160", SYMLINK+="c210", RUN+="/bin/systemctl start indi_v4l2_ccd"
-ACTION=="remove", SUBSYSTEM=="video4linux", ENV{ID_SERIAL}=="046d_080f_8A835160",                  RUN+="/bin/systemctl stop indi_v4l2_ccd"
+#ACTION=="add",    SUBSYSTEM=="video4linux", ENV{ID_MODEL}=="DMx_21AU04.AS", SYMLINK+="dmx21", RUN+="/bin/systemctl --user start indi_v4l2_ccd@7625.service"
+
+ACTION=="remove", SUBSYSTEM=="video4linux", ENV{ID_MODEL}=="DMx_21AU04.AS"
+
+#ACTION=="remove", SUBSYSTEM=="video4linux", ENV{ID_MODEL}=="DMx_21AU04.AS",                   RUN+="/bin/systemctl --user stop indi_v4l2_ccd@7625.service"
+
+ACTION=="add",    SUBSYSTEM=="video4linux", ENV{ID_SERIAL}=="046d_080f_8A835160", TAG+="systemd", ENV{SYSTEMD_ALIAS}="/dev/c210", ENV{SYSTEMD_USER_WANTS}="indi_v4l2_ccd.service", SYMLINK+="c210"
+ACTION=="remove", SUBSYSTEM=="video4linux", ENV{ID_SERIAL}=="046d_080f_8A835160"
+
+#ACTION=="add",    SUBSYSTEM=="video4linux", ENV{ID_SERIAL}=="046d_080f_8A835160", SYMLINK+="c210", RUN+="/bin/systemctl --user start indi_v4l2_ccd@7624.service"
+#ACTION=="remove", SUBSYSTEM=="video4linux", ENV{ID_SERIAL}=="046d_080f_8A835160",                  RUN+="/bin/systemctl --user stop indi_v4l2_ccd@7624.service"

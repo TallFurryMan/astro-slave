@@ -1,0 +1,21 @@
+[Unit]
+Description=INDI Aux Server
+After=network.target
+Wants=indi_guider_ccd.service
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+# User=indi
+Sockets=indiserver_aux.socket
+#StandardInput=fd:indiserver-fifo@%i.socket
+#StandardInput=socket
+StandardOutput=journal
+StandardError=journal
+Restart=on-failure
+RestartSec=5s
+#ExecStartPre=/usr/bin/mkfifo -m 0600 /tmp/indiserver.fifo.7625
+ExecStart=/usr/local/bin/indiserver -v -p 7625 -f /tmp/indiserver.fifo.7625 indi_watchdog
+#ExecStartPost=!/sbin/udevadm trigger

@@ -1,0 +1,18 @@
+[Unit]
+Description=INDI V4L2 CCD driver
+After=indiserver_main.socket
+PartOf=indiserver_main.service
+BindsTo=dev-c210.device
+ConditionPathIsSymbolicLink=/dev/c210
+StopWhenUnneeded=yes
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+Sockets=indiserver_main.socket
+StandardOutput=socket
+ExecStart=/bin/echo "start indi_v4l2_ccd"
+ExecStop=/bin/echo "stop indi_v4l2_ccd"

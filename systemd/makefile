@@ -1,27 +1,28 @@
 
 
-DRIVERS:=indi_eqmod_telescope@.service indi_v4l2_ccd@.service indi_simulator_wheel@.service indi_atik_ccd@.service 
-SERVERS:=indiserver@.socket indiserver@.service 
-UNITS:=$(SERVERS) $(DRIVERS)
-#UNITDIR:=$(shell pkg-config systemd --variable=systemdsystemconfdir)
-UNITDIR:=~/.config/systemd/user
+DRV_MAIN:=indi_eqmod_telescope.service indi_simulator_wheel.service indi_atik_ccd.service indi_moonlite_focus.service indi_v4l2_ccd.service
+DRV_AUX:=indi_guider_ccd.service
+SCK_MAIN:=indiserver_main.socket
+SCK_AUX:=indiserver_aux.socket
+SRV_MAIN:=indiserver_main.service
+SRV_AUX:=indiserver_aux.service
 
-INS_DRIVERS:=$(foreach d,$(DRIVERS),$(subst @,@7624,$d))
+SOCKETS:=$(SCK_MAIN) $(SCK_AUX)
+SERVERS:=$(SRV_MAIN) $(SRV_AUX)
+UNITS:=$(SOCKETS) $(SERVERS) $(DRV_MAIN) $(DRV_AUX)
+UNITDIR:=~/.config/systemd/user
 
 all: $(UNITS)
 
-SCK7624:=indiserver@7624.socket
-SRV7624:=indiserver@7624.service
-SCK7625:=indiserver@7625.socket
-SRV7625:=indiserver@7625.service
+status=systemctl --user --no-pager -l status
 
-install: all
+install: stop all
 	install -Dv -m=0644 --target-directory $(UNITDIR) $(UNITS)
 	systemctl --user daemon-reload
-	systemctl --user enable $(SCK7624) $(SRV7624) $(SCK7625) $(SRV7625)
-	systemctl --user restart $(SCK7624) $(SCK7625)
-	systemctl --user --no-pager status $(SCK7624) $(SCK7625)
-	-systemctl --user --no-pager status $(SRV7624) $(SRV7625)
+	systemctl --user enable $(UNITS)
+	systemctl --user restart $(SERVERS)
+	-$(status) $(SOCKETS)
+	-$(status) $(SERVERS)
 
 install-vnc:
 	sudo apt-get install -y tigervnc-standalone-server
@@ -30,17 +31,28 @@ install-vnc:
 	sudo systemctl start x0vncserver
 
 start:
-	if ! systemctl --user is-active $(SCK7624) ; then echo "Activating indiserver socket..." ; systemctl --user restart $(SCK7624) ; fi
-	systemctl --user --no-pager status $(SCK7624)
-	-systemctl --user --no-pager status $(SRV7624)
+	-systemctl --user start $(SERVERS)
+	$(status) $(SOCKETS)
+	-$(status) $(SERVERS)
 
 stop:
-	if systemctl --user is-active $(SCK7624) ; then systemctl --user stop $(SCK7624) ; fi
-	-systemctl --user --no-pager status $(SCK7624)
-	-systemctl --user --no-pager status $(SRV7624)
+	-systemctl --user stop $(SERVERS)
+	-$(status) $(SOCKETS)
+	-$(status) $(SERVERS)
 
-run-test:
-	systemctl --user --no-pager start $(INS_DRIVERS)
-	-systemctl --user --no-pager status $(INS_DRIVERS)
+test-moonlite:
+	@echo "======================= SETUP"
+	-$(status) indi_moonlite_focus
+	@echo "======================= REMOVING USB TTY"
+	sudo udevadm trigger --action="remove" --name-match=/dev/ttyUSB1
+	-$(status) indi_moonlite_focus
+	sleep 5
+	@echo "======================= ADDING USB TTY"
+	sudo udevadm trigger --action="add" --name-match=/dev/ttyUSB1
+	sleep 5
+	@echo "======================= CHECKING"
+	-$(status) indi_moonlite_focus
+	-$(status) $(SRV_MAIN)
+	@echo "======================= TEARDOWN"
 
-test: start run-test stop
+test: start stop

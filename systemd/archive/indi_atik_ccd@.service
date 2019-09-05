@@ -1,7 +1,10 @@
 [Unit]
 Description=INDI Atik CCD driver
 After=network.target
-Requires=indiserver@%i.socket
+PartOf=indiserver@7624.service
+BindsTo=dev-atik314e.device
+ConditionPathIsSymbolicLink=/dev/atik314e
+StopWhenUnneeded=yes
 
 [Install]
 WantedBy=multi-user.target
@@ -9,7 +12,6 @@ WantedBy=multi-user.target
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-# User=indi
 Sockets=indiserver@%i.socket
 StandardOutput=socket
 ExecStart=/bin/echo "start indi_atik_ccd"

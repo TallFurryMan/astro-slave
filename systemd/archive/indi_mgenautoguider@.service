@@ -1,5 +1,5 @@
 [Unit]
-Description=INDI Moonlite Focus driver
+Description=INDI MGEN Autoguider driver
 After=network.target
 Requires=indiserver@%i.socket
 
@@ -9,8 +9,7 @@ WantedBy=multi-user.target
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-# User=indi
 Sockets=indiserver@%i.socket
 StandardOutput=socket
-ExecStart=/bin/echo "start indi_moonlite_focus"
-ExecStop=/bin/echo "stop indi_moonlite_focus"
+ExecStart=/bin/echo "start indi_mgenautoguider"
+ExecStop=/bin/echo "stop indi_mgenautoguider"
