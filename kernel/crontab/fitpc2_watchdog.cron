@@ -1,0 +1,3 @@
+# Watchdog - Touch watchdog twice per minute
+* * * * * /usr/bin/touch /dev/watchdog
+* * * * * ( sleep 30 ; /usr/bin/touch /dev/watchdog )
