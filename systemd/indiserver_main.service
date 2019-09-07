@@ -17,5 +17,5 @@ StandardError=journal
 Restart=on-failure
 RestartSec=5s
 #ExecStartPre=/usr/bin/mkfifo -m 0600 /tmp/indiserver.fifo.7624
-ExecStart=/usr/local/bin/indiserver -v -p 7624 -f /tmp/indiserver.fifo.7624 indi_watchdog indi_astrometry
+ExecStart=/usr/local/bin/indiserver -l /home/indi/.indi/logs -vv -p 7624 -f /tmp/indiserver.fifo.7624 indi_watchdog indi_astrometry
 #ExecStartPost=!/sbin/udevadm trigger
