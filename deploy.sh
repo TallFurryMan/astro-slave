@@ -5,11 +5,20 @@ DO_INDEXES=${DO_INDEXES:-nope}
 
 # -------------
 
-atik="atikccd-1.30-i386.deb"
-if ! ls -al "$atik"
+if false
 then
-	wget "http://download.cloudmakers.eu/$atik"
-	sudo dpkg -i "$atik"
+	atik="atikccd-1.30-i386.deb"
+	if ! ls -al "$atik"
+	then
+		wget "http://download.cloudmakers.eu/$atik"
+		sudo dpkg -i "$atik"
+	fi
+fi
+libnova="libnova-0.14-0_0.14.0-2.1_i386.deb"
+if ! ls -al "$libnova"
+then
+	wget "https://launchpadlibrarian.net/179037079/$libnova"
+	sudo dpkg -i "$libnova"
 fi
 
 # -------------
@@ -40,18 +49,29 @@ fi
 
 build_folder="${folder}_build"
 mkdir -p "$build_folder"
-cmake_settings="-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local"
-indi_settings="-DWITH_MI=Off -DWITH_FLI=Off -DWITH_SBIG=Off -DWITH_INOVAPLX=Off -DWITH_APOGEE=Off -DWITH_FFMV=Off -DWITH_QHY=Off -DWITH_SSAG=Off -DWITH_QSI=Off -DWITH_FISHCAMP=Off -DWITH_GPSD=Off -DWITH_DSI=Off -DWITH_ASICAM=Off -DWITH_ASTROMECHFOC=Off -DWITH_LIMESDR=Off -DWITH_RTLSDR=Off -DWITH_RADIOSIM=Off -DWITH_GPSNMEA=Off -DWITH_ARMADILLO=Off -DWITH_NIGHTSCAPE=Off -DWITH_ATIK=Off -DWITH_TOUPCAM=Off -DWITH_ALTAIRCAM=Off -DWITH_DREAMFOCUSER=Off -DWITH_AVALON=Off -DWITH_BEEFOCUS=Off"
-if ( cd "$build_folder" && cmake $cmake_settings $indi_settings "../$folder/libindi")
+cmake_settings="-DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr/local -DCCACHE_SUPPORT=ON"
+indi_settings_off="-DWITH_MI=OFF -DWITH_FLI=OFF -DWITH_SBIG=OFF -DWITH_INOVAPLX=OFF -DWITH_APOGEE=OFF -DWITH_FFMV=OFF -DWITH_QHY=OFF -DWITH_SSAG=OFF -DWITH_QSI=OFF -DWITH_FISHCAMP=OFF -DWITH_GPSD=OFF -DWITH_DSI=OFF -DWITH_ASICAM=OFF -DWITH_ASTROMECHFOC=OFF -DWITH_LIMESDR=OFF -DWITH_RTLSDR=OFF -DWITH_RADIOSIM=OFF -DWITH_GPSNMEA=OFF -DWITH_ARMADILLO=OFF -DWITH_NIGHTSCAPE=OFF -DWITH_ATIK=On -DWITH_TOUPCAM=OFF -DWITH_ALTAIRCAM=OFF -DWITH_DREAMFOCUSER=OFF -DWITH_AVALON=OFF -DWITH_BEEFOCUS=OFF -DWITH_MAXDOME=OFF -DWITH_NEXDOME=OFF -DWITH_CLOUDWATCHER=OFF -DWITH_TOUPBASE=OFF"
+#indi_settings_on="EQMOD ATIK"
+#indi_settings=$(foreach d,$indi_settings_off,-DWITH_$d=OFF ) $(foreach d,$indi_settings_on,-DWITH_$d=ON )
+if ( cd "$build_folder" && cmake $cmake_settings $indi_settings_off "../$folder/libindi")
 then
 	pushd "$build_folder"
 	make
 	if [ "${DO_INSTALL:-}" = "yes" ] ; then sudo make install ; fi
 	popd
 fi
+build_folder="${folder}_libatik_build"
+mkdir -p "$build_folder"
+if ( cd "$build_folder" && cmake $cmake_settings "../$folder/3rdparty/libatik" )
+then
+	pushd "$build_folder"
+	make
+        if [ "${DO_INSTALL:-}" = "yes" ]; then sudo make install ; fi
+	popd
+fi
 build_folder="${folder}_3rdparty_build"
 mkdir -p "$build_folder"
-if ( cd "$build_folder" && cmake $cmake_settings $indi_settings "../$folder/3rdparty" )
+if ( cd "$build_folder" && cmake $cmake_settings $indi_settings_off "../$folder/3rdparty" )
 then
 	pushd "$build_folder"
 	make
