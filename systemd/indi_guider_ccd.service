@@ -2,8 +2,10 @@
 Description=INDI Guider CCD driver
 After=indiserver_aux.socket
 PartOf=indiserver_aux.service
-BindsTo=dev-dmx21.device
-ConditionPathIsSymbolicLink=/dev/dmx21
+#BindsTo=dev-dmx21.device
+#ConditionPathIsSymbolicLink=/dev/dmx21
+BindsTo=dev-atik314e.device
+#ConditionPathIsSymbolicLink=/dev/atik314e
 StopWhenUnneeded=yes
 
 [Install]
@@ -14,5 +16,7 @@ Type=oneshot
 RemainAfterExit=yes
 Sockets=indiserver_aux.socket
 StandardOutput=socket
-ExecStart=/bin/echo "start indi_v4l2_ccd"
-ExecStop=/bin/echo "stop indi_v4l2_ccd"
+#ExecStart=/bin/echo "start indi_v4l2_ccd"
+#ExecStop=/bin/echo "stop indi_v4l2_ccd"
+ExecStart=/bin/echo "start indi_atik_ccd"
+ExecStop=/bin/echo "stop indi_atik_ccd"

@@ -1,7 +1,10 @@
 [Unit]
 Description=INDI Main Server
 After=network.target
-Wants=indi_moonlite_focus.service indi_atik_ccd.service indi_eqmod_telescope.service indi_simulator_wheel.service indi_v4l2_ccd.service
+Wants=indi_moonlite_focus.service indi_atik_ccd.service indi_zwo_efw.service
+#indi_v4l2_ccd.service
+#indi_eqmod_telescope.service
+#indi_simulator_wheel.service
 
 [Install]
 WantedBy=multi-user.target
@@ -17,5 +20,5 @@ StandardError=journal
 Restart=on-failure
 RestartSec=5s
 #ExecStartPre=/usr/bin/mkfifo -m 0600 /tmp/indiserver.fifo.7624
-ExecStart=/usr/local/bin/indiserver -l /home/indi/.indi/logs -vv -p 7624 -f /tmp/indiserver.fifo.7624 indi_watchdog indi_astrometry
+ExecStart=/usr/local/bin/indiserver -l /home/indi/.indi/logs -p 7624 -f /tmp/indiserver.fifo.7624 indi_astrometry indi_asi_wheel
 #ExecStartPost=!/sbin/udevadm trigger

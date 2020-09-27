@@ -1,7 +1,9 @@
 [Unit]
 Description=INDI Aux Server
 After=network.target
-Wants=indi_guider_ccd.service
+Wants=indi_atik_ccd.service
+#indi_guider_ccd.service
+#indi_eqmod_telescope.service
 
 [Install]
 WantedBy=multi-user.target
@@ -17,5 +19,5 @@ StandardError=journal
 Restart=on-failure
 RestartSec=5s
 #ExecStartPre=/usr/bin/mkfifo -m 0600 /tmp/indiserver.fifo.7625
-ExecStart=/usr/local/bin/indiserver -v -p 7625 -f /tmp/indiserver.fifo.7625 indi_watchdog
+ExecStart=/usr/local/bin/indiserver -v -p 7625 -f /tmp/indiserver.fifo.7625
 #ExecStartPost=!/sbin/udevadm trigger

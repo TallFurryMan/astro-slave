@@ -1,7 +1,7 @@
 [Unit]
 Description=INDI EQMOD driver
-After=indiserver_main.socket
-PartOf=indiserver_main.service
+After=indiserver_aux.socket
+PartOf=indiserver_aux.service
 BindsTo=dev-tty.eqmod.device
 ConditionPathIsSymbolicLink=/dev/tty.eqmod
 StopWhenUnneeded=yes
@@ -12,7 +12,7 @@ WantedBy=multi-user.target
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-Sockets=indiserver_main.socket
+Sockets=indiserver_aux.socket
 StandardOutput=socket
 ExecStart=/bin/echo "start indi_eqmod_telescope"
 ExecStop=/bin/echo "stop indi_eqmod_telescope"
