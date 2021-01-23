@@ -1,0 +1,19 @@
+[Unit]
+Description=INDI ZWO EFW driver
+After=indiserver_main.socket
+PartOf=indiserver_main.service
+#BindsTo=dev-zwoefw.device
+#ConditionPathIsSymbolicLink=/dev/zwoefw
+StopWhenUnneeded=yes
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+Sockets=indiserver_main.socket
+StandardOutput=socket
+#ExecStart=/bin/echo "start indi_atik_ccd -v -n 'ATIK CCD' -c 'Atik\ 314E\ CCD.xml'"
+ExecStart=/bin/echo "start indi_asi_wheel"
+ExecStop=/bin/echo "stop indi_asi_wheel"

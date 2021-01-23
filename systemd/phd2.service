@@ -1,0 +1,13 @@
+[Unit]
+Description=PHD2 Guiding Engine
+After=xorg.target
+
+[Service]
+Restart=always
+Environment="DISPLAY=:0.0"
+StandardOutput=journal
+StandardError=journal
+ExecStart=/usr/local/bin/phd2
+
+[Install]
+WantedBy=default.target
