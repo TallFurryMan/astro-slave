@@ -1,12 +1,14 @@
 [Unit]
 Description=Remote desktop service (VNC)
-After=syslog.target network.target
+After=syslog.target network.target graphical.target
 
 [Service]
 Type=forking
 User=indi
 Restart=always
-ExecStart=/bin/sh -c 'sleep 60 ; /usr/bin/x0vncserver -display :0 -rfbport 5900 -passwordfile /home/tallfurryman/.vnc/passwd &'
+StartLimitInterval=5
+#ExecStartPre=/bin/bash -c "DISPLAY=:0 /usr/bin/autocutsel -f"
+ExecStart=/bin/sh -c 'sleep 10 ; export DISPLAY=:0 ; /usr/bin/autocutsel -f ; /usr/bin/x0vncserver -display :0 -rfbport 5900 -passwordfile /home/indi/.vnc/passwd &'
 
 [Install]
 WantedBy=multi-user.target

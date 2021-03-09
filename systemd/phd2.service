@@ -7,7 +7,7 @@ Restart=always
 Environment="DISPLAY=:0.0"
 StandardOutput=journal
 StandardError=journal
-ExecStart=/usr/local/bin/phd2
+ExecStart=/bin/env phd2
 
 [Install]
 WantedBy=default.target
