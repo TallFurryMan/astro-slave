@@ -5,9 +5,11 @@ After=xorg.target
 [Service]
 Restart=always
 Environment="DISPLAY=:0.0"
+Environment="LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib/phd2"
 StandardOutput=journal
 StandardError=journal
 ExecStart=/bin/env phd2
+ExecStartPost=/bin/bash -c 'sudo renice --priority -1 --pid $(pidof phd2.bin)'
 
 [Install]
 WantedBy=default.target

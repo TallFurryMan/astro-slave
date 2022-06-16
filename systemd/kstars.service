@@ -1,0 +1,14 @@
+[Unit]
+Description=KStars Planetarium
+After=xorg.target
+
+[Service]
+Restart=always
+Environment="DISPLAY=:0.0"
+StandardOutput=journal
+StandardError=journal
+ExecStart=/bin/env kstars
+ExecStartPost=/bin/bash -c 'sudo renice --priority 1 --pid $(pidof kstars)'
+
+[Install]
+WantedBy=default.target

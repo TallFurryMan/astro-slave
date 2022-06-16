@@ -27,13 +27,21 @@ install: stop all
 install-vnc:
 	sudo apt-get install -y tigervnc-standalone-server
 	sudo install -Dv -m=0644 --target-directory /etc/systemd/system/ x0vncserver.service
+	sudo systemctl daemon-reload
 	sudo systemctl enable x0vncserver
 	sudo systemctl start x0vncserver
 
 install-phd2:
 	install -Dv -m=0644 --target-directory $(UNITDIR) phd2.service
-	systemctl --user enable phd2
+	systemctl --user daemon-reload
+	systemctl --user disable phd2
 	systemctl --user start phd2
+
+install-kstars:
+	install -Dv -m=0644 --target-directory $(UNITDIR) kstars.service
+	systemctl --user daemon-reload
+	systemctl --user disable kstars
+	systemctl --user start kstars
 
 start:
 	-systemctl --user start $(SERVERS)
