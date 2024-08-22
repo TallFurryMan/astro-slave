@@ -1,3 +1,5 @@
 #!/bin/bash
 rm -f .scope_heater_on
-./relays_off.sh
+./mount_off.sh
+./guider_off.sh
+./imager_off.sh
