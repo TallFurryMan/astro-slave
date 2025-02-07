@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchedulerList version='1.5'>
+<Profile>Default</Profile>
+<Job>
+<Name>hip 41378</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>8.44107</J2000RA>
+<J2000DE>10.0804</J2000DE>
+</Coordinates>
+<PositionAngle>0</PositionAngle>
+<Sequence>/home/indi/Documents/HIP41378/10xR60defocus_B30s.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='25'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+<Constraint>EnforceArtificialHorizon</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Loop</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>Elephant</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>21.6583</J2000RA>
+<J2000DE>57.9</J2000DE>
+</Coordinates>
+<PositionAngle>0</PositionAngle>
+<Sequence>/home/indi/Documents/Elephant/300s_Ha.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='25'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+<Constraint>EnforceArtificialHorizon</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Loop</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<SchedulerAlgorithm value='1'/>
+<ErrorHandlingStrategy value='2'>
+<RescheduleErrors />
+<delay>0</delay>
+</ErrorHandlingStrategy>
+<StartupProcedure>
+<Procedure>UnparkMount</Procedure>
+<Procedure>UnparkCap</Procedure>
+</StartupProcedure>
+<ShutdownProcedure>
+<Procedure>WarmCCD</Procedure>
+<Procedure>ParkCap</Procedure>
+<Procedure>ParkMount</Procedure>
+</ShutdownProcedure>
+</SchedulerList>

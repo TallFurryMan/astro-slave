@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchedulerList version='1.5'>
+<Profile>Default</Profile>
+<Job>
+<Name>sh2-129</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>21.1967</J2000RA>
+<J2000DE>59.95</J2000DE>
+</Coordinates>
+<PositionAngle>0</PositionAngle>
+<Sequence>/home/indi/Documents/Squid/300s_OIII.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='0'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+<Constraint>EnforceArtificialHorizon</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Loop</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>sh2-129</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>21.1967</J2000RA>
+<J2000DE>59.95</J2000DE>
+</Coordinates>
+<PositionAngle>0</PositionAngle>
+<Sequence>/home/indi/Documents/Squid/300s_H.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='0'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+<Constraint>EnforceArtificialHorizon</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Loop</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<SchedulerAlgorithm value='1'/>
+<ErrorHandlingStrategy value='2'>
+<RescheduleErrors />
+<delay>60</delay>
+</ErrorHandlingStrategy>
+<StartupProcedure>
+<Procedure>UnparkMount</Procedure>
+<Procedure>UnparkCap</Procedure>
+</StartupProcedure>
+<ShutdownProcedure>
+<Procedure>WarmCCD</Procedure>
+<Procedure>ParkCap</Procedure>
+<Procedure>ParkMount</Procedure>
+</ShutdownProcedure>
+</SchedulerList>

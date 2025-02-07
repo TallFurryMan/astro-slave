@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchedulerList version='1.4'>
+<Profile>Default</Profile>
+<Job>
+<Name>NGC4443</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>12.4542</J2000RA>
+<J2000DE>13.275</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/NGC4443/6x60s_RGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='30'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+<Constraint>EnforceArtificialHorizon</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Loop</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>NGC 7023</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>21.0266</J2000RA>
+<J2000DE>68.1694</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/NGC7023/60s_RGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='40'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Loop</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<SchedulerAlgorithm value='1'/>
+<ErrorHandlingStrategy value='1'>
+<delay>0</delay>
+</ErrorHandlingStrategy>
+<StartupProcedure>
+<Procedure>UnparkMount</Procedure>
+</StartupProcedure>
+<ShutdownProcedure>
+<Procedure>WarmCCD</Procedure>
+<Procedure>ParkMount</Procedure>
+</ShutdownProcedure>
+</SchedulerList>

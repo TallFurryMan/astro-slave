@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchedulerList version='1.4'>
+<Profile>Default</Profile>
+<Job>
+<Name>Tulip</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>20.0592</J2000RA>
+<J2000DE>35.3756</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/Tulip/300s_OIII_Ha_60s_RGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='15'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition value='3'>Repeat</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>Tulip</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>20.0592</J2000RA>
+<J2000DE>35.3756</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/Tulip/300s_OIII_Ha_60s_RGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='15'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition value='3'>Repeat</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>Tulip</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>20.0592</J2000RA>
+<J2000DE>35.3756</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/Tulip/300s_OIII_Ha_60s_RGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='15'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition value='3'>Repeat</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>Tulip</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>20.0592</J2000RA>
+<J2000DE>35.3756</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/Tulip/300s_OIII_Ha_60s_RGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='15'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition value='3'>Repeat</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>Tulip</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>20.0592</J2000RA>
+<J2000DE>35.3756</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/Tulip/300s_OIII_Ha_60s_RGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='15'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition value='3'>Repeat</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>Tulip</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>20.0592</J2000RA>
+<J2000DE>35.3756</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/Tulip/300s_OIII_Ha_60s_RGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='15'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition value='3'>Repeat</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<ErrorHandlingStrategy value='2'>
+<RescheduleErrors />
+<delay>0</delay>
+</ErrorHandlingStrategy>
+<StartupProcedure>
+<Procedure>UnparkMount</Procedure>
+</StartupProcedure>
+<ShutdownProcedure>
+<Procedure>WarmCCD</Procedure>
+<Procedure>ParkMount</Procedure>
+</ShutdownProcedure>
+</SchedulerList>

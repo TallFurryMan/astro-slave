@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchedulerList version='1.6'>
+<Profile>Default</Profile>
+<Job>
+<Name>SH-54</Name>
+<Group></Group>
+<Coordinates>
+<J2000RA>18.3352</J2000RA>
+<J2000DE>-11.7732</J2000DE>
+</Coordinates>
+<PositionAngle>-181</PositionAngle>
+<Sequence>/home/indi/Documents/SH2-54/300s_OIII.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='20'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+<Constraint>EnforceArtificialHorizon</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Loop</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>Sh2 199</Name>
+<Group></Group>
+<Coordinates>
+<J2000RA>2.90933</J2000RA>
+<J2000DE>60.4094</J2000DE>
+</Coordinates>
+<PositionAngle>0</PositionAngle>
+<Sequence>/home/indi/Documents/SH2-199/SH2-199_oiii.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='35'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+<Constraint>EnforceArtificialHorizon</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition value='2023-10-10T02:00:00'>At</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>Sh2 199</Name>
+<Group></Group>
+<Coordinates>
+<J2000RA>2.90933</J2000RA>
+<J2000DE>60.4094</J2000DE>
+</Coordinates>
+<PositionAngle>0</PositionAngle>
+<Sequence>/home/indi/Documents/SH2-199/SH2-199_ha.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='25'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+<Constraint>EnforceArtificialHorizon</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Loop</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<SchedulerAlgorithm value='1'/>
+<ErrorHandlingStrategy value='1'>
+<RescheduleErrors />
+<delay>0</delay>
+</ErrorHandlingStrategy>
+<StartupProcedure>
+<Procedure>UnparkMount</Procedure>
+</StartupProcedure>
+<ShutdownProcedure>
+<Procedure>WarmCCD</Procedure>
+<Procedure>ParkMount</Procedure>
+<Procedure value='/home/indi/park_cabanon.sh'>ShutdownScript</Procedure>
+</ShutdownProcedure>
+</SchedulerList>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchedulerList version='1.4'>
+<Profile>Default</Profile>
+<Job>
+<Name>IC 405</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>5.27483</J2000RA>
+<J2000DE>34.3561</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/IC405/5x300sHa.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='0'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition value='2021-04-27T23:58:00'>At</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>M 63</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>13.2637</J2000RA>
+<J2000DE>42.0292</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/M63/10x60sRGB_4x300sHa.esq</Sequence>
+<StartupCondition>
+<Condition value='2021-04-28T00:05:00'>At</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='0'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Sequence</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>M 13</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>16.6949</J2000RA>
+<J2000DE>36.4611</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/M13/10x60sRGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='0'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Sequence</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>M 13</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>16.6949</J2000RA>
+<J2000DE>36.4611</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/M13/10x60sRGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='0'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Sequence</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>NGC 7023</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>21.0266</J2000RA>
+<J2000DE>68.1694</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/NGC7023/10x30sLRGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='40'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Sequence</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>NGC 7023</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>21.0266</J2000RA>
+<J2000DE>68.1694</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/NGC7023/10x30sLRGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='40'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Sequence</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>NGC 7023</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>21.0266</J2000RA>
+<J2000DE>68.1694</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/NGC7023/10x30sLRGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='40'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Sequence</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>NGC 7023</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>21.0266</J2000RA>
+<J2000DE>68.1694</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/NGC7023/10x30sLRGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='40'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Sequence</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<Job>
+<Name>NGC 7023</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>21.0266</J2000RA>
+<J2000DE>68.1694</J2000DE>
+</Coordinates>
+<Rotation>0</Rotation>
+<Sequence>/home/indi/Documents/NGC7023/10x30sLRGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='40'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Sequence</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<ErrorHandlingStrategy value='2'>
+<RescheduleErrors />
+<delay>0</delay>
+</ErrorHandlingStrategy>
+<StartupProcedure>
+<Procedure>UnparkMount</Procedure>
+</StartupProcedure>
+<ShutdownProcedure>
+<Procedure>WarmCCD</Procedure>
+<Procedure>ParkMount</Procedure>
+</ShutdownProcedure>
+</SchedulerList>

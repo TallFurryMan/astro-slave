@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SchedulerList version='1.5'>
+<Profile>Default</Profile>
+<Job>
+<Name>hd82210</Name>
+<Priority>10</Priority>
+<Coordinates>
+<J2000RA>9.57468</J2000RA>
+<J2000DE>69.8303</J2000DE>
+</Coordinates>
+<PositionAngle>0</PositionAngle>
+<Sequence>/home/indi/Documents/HD82210/60s_RGB.esq</Sequence>
+<StartupCondition>
+<Condition>ASAP</Condition>
+</StartupCondition>
+<Constraints>
+<Constraint value='40'>MinimumAltitude</Constraint>
+<Constraint>EnforceTwilight</Constraint>
+<Constraint>EnforceArtificialHorizon</Constraint>
+</Constraints>
+<CompletionCondition>
+<Condition>Loop</Condition>
+</CompletionCondition>
+<Steps>
+<Step>Track</Step>
+<Step>Focus</Step>
+<Step>Align</Step>
+<Step>Guide</Step>
+</Steps>
+</Job>
+<SchedulerAlgorithm value='1'/>
+<ErrorHandlingStrategy value='1'>
+<delay>0</delay>
+</ErrorHandlingStrategy>
+<StartupProcedure>
+<Procedure value='/home/indi/unpark_cabanon.sh'>StartupScript</Procedure>
+<Procedure>UnparkMount</Procedure>
+<Procedure>UnparkCap</Procedure>
+</StartupProcedure>
+<ShutdownProcedure>
+<Procedure>WarmCCD</Procedure>
+<Procedure>ParkCap</Procedure>
+<Procedure>ParkMount</Procedure>
+<Procedure value='/home/indi/park_cabanon.sh'>ShutdownScript</Procedure>
+</ShutdownProcedure>
+</SchedulerList>
