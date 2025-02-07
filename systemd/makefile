@@ -25,11 +25,12 @@ install: stop all
 	-$(status) $(SERVERS)
 
 install-vnc:
-	sudo apt-get install -y tigervnc-standalone-server
-	sudo install -Dv -m=0644 --target-directory /etc/systemd/system/ x0vncserver.service
+	sudo systemctl stop x0vncserver autocutsel
+	if ! which x0vncserver >/dev/null ; then sudo apt-get install -y tigervnc-scraping-server autocutsel ; fi
+	sudo install -Dv -m=0644 --target-directory /etc/systemd/system/ x0vncserver.service autocutsel.service
 	sudo systemctl daemon-reload
-	sudo systemctl enable x0vncserver
-	sudo systemctl start x0vncserver
+	sudo systemctl enable --now x0vncserver autocutsel
+	sudo systemctl status x0vncserver
 
 install-phd2:
 	install -Dv -m=0644 --target-directory $(UNITDIR) phd2.service

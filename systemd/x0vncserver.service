@@ -1,14 +1,22 @@
 [Unit]
 Description=Remote desktop service (VNC)
-After=syslog.target network.target
+Requires=display-manager.service
+After=network-online.target
+After=display-manager.service
 
 [Service]
-Type=forking
-User=indi
+Type=simple
+User=root
 Restart=always
+RestartSec=2s
 StartLimitInterval=5
-#ExecStartPre=/bin/bash -c "DISPLAY=:0 /usr/bin/autocutsel -f"
-ExecStart=/bin/sh -c 'sleep 10 ; export DISPLAY=:0 ; /usr/bin/autocutsel -f ; /usr/bin/x0vncserver -localhost no -display :0 -rfbport 5900 -passwordfile /home/indi/.vnc/passwd &'
+Environment="DISPLAY=:0"
+Environment=HOME=/root
+ExecStartPre=/usr/bin/sleep 10
+ExecStartPre=-/usr/bin/x0vncserver -kill :0
+ExecStartPre=/usr/bin/bash -c "/usr/bin/systemctl set-environment XAUTHORITY=$(find /var/run/sddm/ -type f)"
+ExecStart=/usr/bin/x0vncserver -display :0 -rfbport 5900 -rfbauth /home/tallfurryman/.vnc/passwd
+#ExecStart=/usr/bin/x0vncserver -display :0 -fg -verbose -SecurityTypes None
 
 [Install]
 WantedBy=multi-user.target
