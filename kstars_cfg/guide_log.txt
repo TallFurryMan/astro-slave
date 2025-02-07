@@ -1,0 +1,5 @@
+Guiding rate,x15 arcsec/sec: 
+Focal,mm: 162
+Aperture,mm: 50
+F/D: 3.24
+Frame #, Time Elapsed (ms), RA Error (arcsec), RA Correction (ms), RA Correction Direction, DEC Error (arcsec), DEC Correction (ms), DEC Correction Direction
