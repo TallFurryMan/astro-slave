@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SequenceQueue version='2.5'>
+<GuideDeviation enabled='false'>4</GuideDeviation>
+<GuideStartDeviation enabled='false'>2</GuideStartDeviation>
+<Autofocus enabled='false'>2.02062</Autofocus>
+<RefocusOnTemperatureDelta enabled='false'>1</RefocusOnTemperatureDelta>
+<RefocusEveryN enabled='false'>60</RefocusEveryN>
+<RefocusOnMeridianFlip enabled='false'/>
+<Job>
+<Exposure>0.1</Exposure>
+<Format>RAW</Format>
+<Encoding>FITS</Encoding>
+<Binning>
+<X>1</X>
+<Y>1</Y>
+</Binning>
+<Frame>
+<X>0</X>
+<Y>0</Y>
+<W>4644</W>
+<H>3506</H>
+</Frame>
+<Temperature force='false'>0</Temperature>
+<Filter>Red</Filter>
+<Type>Light</Type>
+<Count>200</Count>
+<Delay>1</Delay>
+<FITSDirectory>/home/indi/Documents/Moon</FITSDirectory>
+<PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
+<PlaceholderSuffix>1</PlaceholderSuffix>
+<UploadMode>0</UploadMode>
+<Properties>
+</Properties>
+<Calibration>
+<FlatSource>
+<Type>Wall</Type>
+<Az>30.8789</Az>
+<Alt>-2.88667</Alt>
+</FlatSource>
+<FlatDuration dark='false'>
+<Type>ADU</Type>
+<Value>2000</Value>
+<Tolerance>700</Tolerance>
+</FlatDuration>
+<PreMountPark>False</PreMountPark>
+<PreDomePark>False</PreDomePark>
+</Calibration>
+</Job>
+<Job>
+<Exposure>0.2</Exposure>
+<Format>RAW</Format>
+<Encoding>FITS</Encoding>
+<Binning>
+<X>1</X>
+<Y>1</Y>
+</Binning>
+<Frame>
+<X>0</X>
+<Y>0</Y>
+<W>4644</W>
+<H>3506</H>
+</Frame>
+<Temperature force='false'>0</Temperature>
+<Filter>Green</Filter>
+<Type>Light</Type>
+<Count>200</Count>
+<Delay>1</Delay>
+<FITSDirectory>/home/indi/Documents/Moon</FITSDirectory>
+<PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
+<PlaceholderSuffix>1</PlaceholderSuffix>
+<UploadMode>0</UploadMode>
+<Properties>
+</Properties>
+<Calibration>
+<FlatSource>
+<Type>Wall</Type>
+<Az>30.8789</Az>
+<Alt>-2.88667</Alt>
+</FlatSource>
+<FlatDuration dark='false'>
+<Type>ADU</Type>
+<Value>2000</Value>
+<Tolerance>700</Tolerance>
+</FlatDuration>
+<PreMountPark>False</PreMountPark>
+<PreDomePark>False</PreDomePark>
+</Calibration>
+</Job>
+<Job>
+<Exposure>0.1</Exposure>
+<Format>RAW</Format>
+<Encoding>FITS</Encoding>
+<Binning>
+<X>1</X>
+<Y>1</Y>
+</Binning>
+<Frame>
+<X>0</X>
+<Y>0</Y>
+<W>4644</W>
+<H>3506</H>
+</Frame>
+<Temperature force='false'>0</Temperature>
+<Filter>Blue</Filter>
+<Type>Light</Type>
+<Count>200</Count>
+<Delay>1</Delay>
+<FITSDirectory>/home/indi/Documents/Moon</FITSDirectory>
+<PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
+<PlaceholderSuffix>1</PlaceholderSuffix>
+<UploadMode>0</UploadMode>
+<Properties>
+</Properties>
+<Calibration>
+<FlatSource>
+<Type>Wall</Type>
+<Az>30.8789</Az>
+<Alt>-2.88667</Alt>
+</FlatSource>
+<FlatDuration dark='false'>
+<Type>ADU</Type>
+<Value>2000</Value>
+<Tolerance>700</Tolerance>
+</FlatDuration>
+<PreMountPark>False</PreMountPark>
+<PreDomePark>False</PreDomePark>
+</Calibration>
+</Job>
+</SequenceQueue>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SequenceQueue version='2.6'>
+<GuideDeviation enabled='true'>3</GuideDeviation>
+<GuideStartDeviation enabled='true'>2</GuideStartDeviation>
+<HFRCheck enabled='false'>
+<HFRDeviation>0.910065</HFRDeviation>
+<HFRCheckAlgorithm>0</HFRCheckAlgorithm>
+<HFRCheckThreshold>10</HFRCheckThreshold>
+<HFRCheckFrames>1</HFRCheckFrames>
+</HFRCheck>
+<RefocusOnTemperatureDelta enabled='false'>1</RefocusOnTemperatureDelta>
+<RefocusEveryN enabled='true'>60</RefocusEveryN>
+<RefocusOnMeridianFlip enabled='false'/>
+<Job>
+<Exposure>60</Exposure>
+<Format>RAW</Format>
+<Encoding>FITS</Encoding>
+<Binning>
+<X>1</X>
+<Y>1</Y>
+</Binning>
+<Frame>
+<X>0</X>
+<Y>0</Y>
+<W>4644</W>
+<H>3506</H>
+</Frame>
+<Temperature force='true'>-15</Temperature>
+<Filter>Red</Filter>
+<Type>Light</Type>
+<Count>5</Count>
+<Delay>0</Delay>
+<TargetName>C/2023 A3 (Tsuchinshan-ATLAS)</TargetName>
+<GuideDitherPerJob>0</GuideDitherPerJob>
+<FITSDirectory>/home/indi/Documents/c2023-ta</FITSDirectory>
+<PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
+<PlaceholderSuffix>1</PlaceholderSuffix>
+<UploadMode>0</UploadMode>
+<Properties>
+<PropertyVector name='CCD_CONTROLS'>
+<OneElement name='Gain'>0</OneElement>
+<OneElement name='Offset'>0</OneElement>
+</PropertyVector>
+</Properties>
+<Calibration>
+<PreAction>
+<Type>1</Type>
+</PreAction>
+<FlatDuration dark='false'>
+<Type>Manual</Type>
+</FlatDuration>
+</Calibration>
+</Job>
+<Job>
+<Exposure>60</Exposure>
+<Format>RAW</Format>
+<Encoding>FITS</Encoding>
+<Binning>
+<X>1</X>
+<Y>1</Y>
+</Binning>
+<Frame>
+<X>0</X>
+<Y>0</Y>
+<W>4644</W>
+<H>3506</H>
+</Frame>
+<Temperature force='true'>-15</Temperature>
+<Filter>Green</Filter>
+<Type>Light</Type>
+<Count>5</Count>
+<Delay>0</Delay>
+<TargetName>C/2023 A3 (Tsuchinshan-ATLAS)</TargetName>
+<GuideDitherPerJob>0</GuideDitherPerJob>
+<FITSDirectory>/home/indi/Documents/c2023-ta</FITSDirectory>
+<PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
+<PlaceholderSuffix>1</PlaceholderSuffix>
+<UploadMode>0</UploadMode>
+<Properties>
+<PropertyVector name='CCD_CONTROLS'>
+<OneElement name='Gain'>0</OneElement>
+<OneElement name='Offset'>0</OneElement>
+</PropertyVector>
+</Properties>
+<Calibration>
+<PreAction>
+<Type>1</Type>
+</PreAction>
+<FlatDuration dark='false'>
+<Type>Manual</Type>
+</FlatDuration>
+</Calibration>
+</Job>
+<Job>
+<Exposure>60</Exposure>
+<Format>RAW</Format>
+<Encoding>FITS</Encoding>
+<Binning>
+<X>1</X>
+<Y>1</Y>
+</Binning>
+<Frame>
+<X>0</X>
+<Y>0</Y>
+<W>4644</W>
+<H>3506</H>
+</Frame>
+<Temperature force='true'>-15</Temperature>
+<Filter>Blue</Filter>
+<Type>Light</Type>
+<Count>5</Count>
+<Delay>0</Delay>
+<TargetName>C/2023 A3 (Tsuchinshan-ATLAS)</TargetName>
+<GuideDitherPerJob>0</GuideDitherPerJob>
+<FITSDirectory>/home/indi/Documents/c2023-ta</FITSDirectory>
+<PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
+<PlaceholderSuffix>1</PlaceholderSuffix>
+<UploadMode>0</UploadMode>
+<Properties>
+<PropertyVector name='CCD_CONTROLS'>
+<OneElement name='Gain'>0</OneElement>
+<OneElement name='Offset'>0</OneElement>
+</PropertyVector>
+</Properties>
+<Calibration>
+<PreAction>
+<Type>1</Type>
+</PreAction>
+<FlatDuration dark='false'>
+<Type>Manual</Type>
+</FlatDuration>
+</Calibration>
+</Job>
+</SequenceQueue>

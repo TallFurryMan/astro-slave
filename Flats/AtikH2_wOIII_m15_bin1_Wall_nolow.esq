@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SequenceQueue version='2.5'>
+<Observer>Eric Dejouhanet</Observer>
+<GuideDeviation enabled='false'>4</GuideDeviation>
+<GuideStartDeviation enabled='false'>2</GuideStartDeviation>
+<Autofocus enabled='false'>0.5</Autofocus>
+<RefocusOnTemperatureDelta enabled='false'>1</RefocusOnTemperatureDelta>
+<RefocusEveryN enabled='false'>60</RefocusEveryN>
+<RefocusOnMeridianFlip enabled='false'/>
+<Job>
+<Exposure>0.189984</Exposure>
+<Format>RAW</Format>
+<Encoding>FITS</Encoding>
+<Binning>
+<X>1</X>
+<Y>1</Y>
+</Binning>
+<Frame>
+<X>0</X>
+<Y>0</Y>
+<W>4644</W>
+<H>3506</H>
+</Frame>
+<Temperature force='true'>-15</Temperature>
+<Filter>Red</Filter>
+<Type>Flat</Type>
+<Count>10</Count>
+<Delay>1</Delay>
+<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
+<PlaceholderSuffix>3</PlaceholderSuffix>
+<UploadMode>0</UploadMode>
+<Properties>
+<PropertyVector name='CCD_CONTROLS'>
+<OneElement name='CONTROL_GAIN'>30</OneElement>
+<OneElement name='CONTROL_OFFSET'>114</OneElement>
+</PropertyVector>
+</Properties>
+<Calibration>
+<FlatSource>
+<Type>Wall</Type>
+<Az>30.8789</Az>
+<Alt>-2.88667</Alt>
+</FlatSource>
+<FlatDuration dark='false'>
+<Type>ADU</Type>
+<Value>2000</Value>
+<Tolerance>700</Tolerance>
+</FlatDuration>
+<PreMountPark>False</PreMountPark>
+<PreDomePark>False</PreDomePark>
+</Calibration>
+</Job>
+<Job>
+<Exposure>0.033489</Exposure>
+<Format>RAW</Format>
+<Encoding>FITS</Encoding>
+<Binning>
+<X>1</X>
+<Y>1</Y>
+</Binning>
+<Frame>
+<X>0</X>
+<Y>0</Y>
+<W>4644</W>
+<H>3506</H>
+</Frame>
+<Temperature force='true'>-15</Temperature>
+<Filter>Green</Filter>
+<Type>Flat</Type>
+<Count>10</Count>
+<Delay>1</Delay>
+<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
+<PlaceholderSuffix>3</PlaceholderSuffix>
+<UploadMode>0</UploadMode>
+<Properties>
+<PropertyVector name='CCD_CONTROLS'>
+<OneElement name='CONTROL_GAIN'>30</OneElement>
+<OneElement name='CONTROL_OFFSET'>114</OneElement>
+</PropertyVector>
+</Properties>
+<Calibration>
+<FlatSource>
+<Type>Wall</Type>
+<Az>30.8789</Az>
+<Alt>-2.88667</Alt>
+</FlatSource>
+<FlatDuration dark='false'>
+<Type>ADU</Type>
+<Value>2000</Value>
+<Tolerance>700</Tolerance>
+</FlatDuration>
+<PreMountPark>False</PreMountPark>
+<PreDomePark>False</PreDomePark>
+</Calibration>
+</Job>
+<Job>
+<Exposure>0.031226</Exposure>
+<Format>RAW</Format>
+<Encoding>FITS</Encoding>
+<Binning>
+<X>1</X>
+<Y>1</Y>
+</Binning>
+<Frame>
+<X>0</X>
+<Y>0</Y>
+<W>4644</W>
+<H>3506</H>
+</Frame>
+<Temperature force='true'>-15</Temperature>
+<Filter>Blue</Filter>
+<Type>Flat</Type>
+<Count>10</Count>
+<Delay>1</Delay>
+<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
+<PlaceholderSuffix>3</PlaceholderSuffix>
+<UploadMode>0</UploadMode>
+<Properties>
+<PropertyVector name='CCD_CONTROLS'>
+<OneElement name='CONTROL_GAIN'>30</OneElement>
+<OneElement name='CONTROL_OFFSET'>114</OneElement>
+</PropertyVector>
+</Properties>
+<Calibration>
+<FlatSource>
+<Type>Wall</Type>
+<Az>30.8789</Az>
+<Alt>-2.88667</Alt>
+</FlatSource>
+<FlatDuration dark='false'>
+<Type>ADU</Type>
+<Value>2000</Value>
+<Tolerance>700</Tolerance>
+</FlatDuration>
+<PreMountPark>False</PreMountPark>
+<PreDomePark>False</PreDomePark>
+</Calibration>
+</Job>
+<Job>
+<Exposure>1.49377</Exposure>
+<Format>RAW</Format>
+<Encoding>FITS</Encoding>
+<Binning>
+<X>1</X>
+<Y>1</Y>
+</Binning>
+<Frame>
+<X>0</X>
+<Y>0</Y>
+<W>4644</W>
+<H>3506</H>
+</Frame>
+<Temperature force='true'>-15</Temperature>
+<Filter>H_Alpha</Filter>
+<Type>Flat</Type>
+<Count>10</Count>
+<Delay>1</Delay>
+<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
+<PlaceholderSuffix>3</PlaceholderSuffix>
+<UploadMode>0</UploadMode>
+<Properties>
+<PropertyVector name='CCD_CONTROLS'>
+<OneElement name='CONTROL_GAIN'>30</OneElement>
+<OneElement name='CONTROL_OFFSET'>114</OneElement>
+</PropertyVector>
+</Properties>
+<Calibration>
+<FlatSource>
+<Type>Wall</Type>
+<Az>30.8789</Az>
+<Alt>-2.88667</Alt>
+</FlatSource>
+<FlatDuration dark='false'>
+<Type>ADU</Type>
+<Value>2000</Value>
+<Tolerance>700</Tolerance>
+</FlatDuration>
+<PreMountPark>False</PreMountPark>
+<PreDomePark>False</PreDomePark>
+</Calibration>
+</Job>
+<Job>
+<Exposure>0.410556</Exposure>
+<Format>RAW</Format>
+<Encoding>FITS</Encoding>
+<Binning>
+<X>1</X>
+<Y>1</Y>
+</Binning>
+<Frame>
+<X>0</X>
+<Y>0</Y>
+<W>4644</W>
+<H>3506</H>
+</Frame>
+<Temperature force='true'>-15</Temperature>
+<Filter>OIII</Filter>
+<Type>Flat</Type>
+<Count>10</Count>
+<Delay>1</Delay>
+<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
+<PlaceholderSuffix>3</PlaceholderSuffix>
+<UploadMode>0</UploadMode>
+<Properties>
+<PropertyVector name='CCD_CONTROLS'>
+<OneElement name='CONTROL_GAIN'>30</OneElement>
+<OneElement name='CONTROL_OFFSET'>114</OneElement>
+</PropertyVector>
+</Properties>
+<Calibration>
+<FlatSource>
+<Type>Wall</Type>
+<Az>30.8789</Az>
+<Alt>-2.88667</Alt>
+</FlatSource>
+<FlatDuration dark='false'>
+<Type>ADU</Type>
+<Value>2000</Value>
+<Tolerance>700</Tolerance>
+</FlatDuration>
+<PreMountPark>False</PreMountPark>
+<PreDomePark>False</PreDomePark>
+</Calibration>
+</Job>
+</SequenceQueue>
