@@ -32,7 +32,7 @@
 </Prefix>
 <Count>3</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/NGC4443</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/NGC4443</FITSDirectory>
 <UploadMode>0</UploadMode>
 <Properties>
 <PropertyVector name='CCD_CONTROLS'>
@@ -80,7 +80,7 @@
 </Prefix>
 <Count>3</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/NGC4443</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/NGC4443</FITSDirectory>
 <UploadMode>0</UploadMode>
 <Properties>
 <PropertyVector name='CCD_CONTROLS'>
@@ -128,7 +128,7 @@
 </Prefix>
 <Count>6</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/NGC4443</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/NGC4443</FITSDirectory>
 <UploadMode>0</UploadMode>
 <Properties>
 <PropertyVector name='CCD_CONTROLS'>
@@ -176,7 +176,7 @@
 </Prefix>
 <Count>3</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/NGC4443</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/NGC4443</FITSDirectory>
 <UploadMode>0</UploadMode>
 <Properties>
 <PropertyVector name='CCD_CONTROLS'>
@@ -224,7 +224,7 @@
 </Prefix>
 <Count>3</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/NGC4443</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/NGC4443</FITSDirectory>
 <UploadMode>0</UploadMode>
 <Properties>
 <PropertyVector name='CCD_CONTROLS'>

@@ -32,7 +32,7 @@
 <Delay>0</Delay>
 <TargetName>C/2023 A3 (Tsuchinshan-ATLAS)</TargetName>
 <GuideDitherPerJob>0</GuideDitherPerJob>
-<FITSDirectory>/home/indi/Documents/c2023-ta</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/c2023-ta</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>1</PlaceholderSuffix>
 <UploadMode>0</UploadMode>
@@ -72,7 +72,7 @@
 <Delay>0</Delay>
 <TargetName>C/2023 A3 (Tsuchinshan-ATLAS)</TargetName>
 <GuideDitherPerJob>0</GuideDitherPerJob>
-<FITSDirectory>/home/indi/Documents/c2023-ta</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/c2023-ta</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>1</PlaceholderSuffix>
 <UploadMode>0</UploadMode>
@@ -112,7 +112,7 @@
 <Delay>0</Delay>
 <TargetName>C/2023 A3 (Tsuchinshan-ATLAS)</TargetName>
 <GuideDitherPerJob>0</GuideDitherPerJob>
-<FITSDirectory>/home/indi/Documents/c2023-ta</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/c2023-ta</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>1</PlaceholderSuffix>
 <UploadMode>0</UploadMode>

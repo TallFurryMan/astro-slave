@@ -25,7 +25,7 @@
 <Type>Light</Type>
 <Count>200</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Moon</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Moon</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>1</PlaceholderSuffix>
 <UploadMode>0</UploadMode>
@@ -65,7 +65,7 @@
 <Type>Light</Type>
 <Count>200</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Moon</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Moon</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>1</PlaceholderSuffix>
 <UploadMode>0</UploadMode>
@@ -105,7 +105,7 @@
 <Type>Light</Type>
 <Count>200</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Moon</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Moon</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>1</PlaceholderSuffix>
 <UploadMode>0</UploadMode>

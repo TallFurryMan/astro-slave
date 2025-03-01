@@ -30,7 +30,7 @@
 </Prefix>
 <Count>2</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/SH2-240</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/SH2-240</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -77,7 +77,7 @@
 </Prefix>
 <Count>2</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/SH2-240</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/SH2-240</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -124,7 +124,7 @@
 </Prefix>
 <Count>2</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/SH2-240</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/SH2-240</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -171,7 +171,7 @@
 </Prefix>
 <Count>2</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/SH2-240</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/SH2-240</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -218,7 +218,7 @@
 </Prefix>
 <Count>2</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/SH2-240</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/SH2-240</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>

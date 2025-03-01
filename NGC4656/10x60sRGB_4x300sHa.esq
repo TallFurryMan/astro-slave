@@ -30,7 +30,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/NGC4656</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/NGC4656</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -73,7 +73,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/NGC4656</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/NGC4656</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -116,7 +116,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/NGC4656</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/NGC4656</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -159,7 +159,7 @@
 </Prefix>
 <Count>4</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/NGC4656</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/NGC4656</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>

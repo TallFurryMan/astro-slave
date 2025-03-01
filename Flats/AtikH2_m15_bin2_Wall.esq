@@ -30,7 +30,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Flats</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -77,7 +77,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Flats</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -124,7 +124,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Flats</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -171,7 +171,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Flats</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -218,7 +218,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Flats</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -265,7 +265,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Flats</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -312,7 +312,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Flats</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -359,7 +359,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Flats</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -406,7 +406,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Flats</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -454,7 +454,7 @@
 <Count>10</Count>
 <Delay>1</Delay>
 <PostJobScript>/home/indi/accessory_off.sh</PostJobScript>
-<FITSDirectory>/home/indi/Documents/Flats</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Flats</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>

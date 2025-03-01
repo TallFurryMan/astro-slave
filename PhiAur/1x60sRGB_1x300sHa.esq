@@ -30,7 +30,7 @@
 </Prefix>
 <Count>1</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/PhiAur</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/PhiAur</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -73,7 +73,7 @@
 </Prefix>
 <Count>1</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/PhiAur</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/PhiAur</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -116,7 +116,7 @@
 </Prefix>
 <Count>1</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/PhiAur</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/PhiAur</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -159,7 +159,7 @@
 </Prefix>
 <Count>1</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/PhiAur</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/PhiAur</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>

@@ -30,7 +30,7 @@
 </Prefix>
 <Count>2</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/NGC6888</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/NGC6888</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>

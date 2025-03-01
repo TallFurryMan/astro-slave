@@ -33,7 +33,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/M42</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/M42</FITSDirectory>
 <UploadMode>0</UploadMode>
 <Properties>
 <PropertyVector name='CCD_CONTROLS'>
@@ -77,7 +77,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/M42</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/M42</FITSDirectory>
 <UploadMode>0</UploadMode>
 <Properties>
 <PropertyVector name='CCD_CONTROLS'>
@@ -121,7 +121,7 @@
 </Prefix>
 <Count>10</Count>
 <Delay>0</Delay>
-<FITSDirectory>/home/indi/Documents/M42</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/M42</FITSDirectory>
 <UploadMode>0</UploadMode>
 <Properties>
 <PropertyVector name='CCD_CONTROLS'>

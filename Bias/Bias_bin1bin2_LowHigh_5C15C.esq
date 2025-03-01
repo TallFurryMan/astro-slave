@@ -29,7 +29,7 @@
 </Prefix>
 <Count>30</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Bias</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Bias</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -73,7 +73,7 @@
 </Prefix>
 <Count>30</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Bias</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Bias</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -117,7 +117,7 @@
 </Prefix>
 <Count>30</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Bias</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Bias</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -161,7 +161,7 @@
 </Prefix>
 <Count>30</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Bias</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Bias</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -205,7 +205,7 @@
 </Prefix>
 <Count>30</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Bias</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Bias</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -249,7 +249,7 @@
 </Prefix>
 <Count>30</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Bias</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Bias</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -293,7 +293,7 @@
 </Prefix>
 <Count>30</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Bias</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Bias</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>
@@ -337,7 +337,7 @@
 </Prefix>
 <Count>30</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Bias</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Bias</FITSDirectory>
 <UploadMode>0</UploadMode>
 <FormatIndex>0</FormatIndex>
 <Properties>

@@ -26,7 +26,7 @@
 <Type>Dark</Type>
 <Count>20</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Darks</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Darks</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>3</PlaceholderSuffix>
 <UploadMode>0</UploadMode>
@@ -68,7 +68,7 @@
 <Type>Dark</Type>
 <Count>20</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Darks</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Darks</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>3</PlaceholderSuffix>
 <UploadMode>0</UploadMode>
@@ -110,7 +110,7 @@
 <Type>Dark</Type>
 <Count>20</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Darks</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Darks</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>3</PlaceholderSuffix>
 <UploadMode>0</UploadMode>
@@ -152,7 +152,7 @@
 <Type>Dark</Type>
 <Count>20</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Darks</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Darks</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>3</PlaceholderSuffix>
 <UploadMode>0</UploadMode>
@@ -194,7 +194,7 @@
 <Type>Dark</Type>
 <Count>20</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Darks</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Darks</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>3</PlaceholderSuffix>
 <UploadMode>0</UploadMode>
@@ -236,7 +236,7 @@
 <Type>Dark</Type>
 <Count>20</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Darks</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Darks</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>3</PlaceholderSuffix>
 <UploadMode>0</UploadMode>
@@ -278,7 +278,7 @@
 <Type>Dark</Type>
 <Count>20</Count>
 <Delay>1</Delay>
-<FITSDirectory>/home/indi/Documents/Darks</FITSDirectory>
+<FITSDirectory>/home/tallfurryman/Documents/astro-slave/Darks</FITSDirectory>
 <PlaceholderFormat>/%t/%T/%F/%t_%T_%F_%e_%D</PlaceholderFormat>
 <PlaceholderSuffix>3</PlaceholderSuffix>
 <UploadMode>0</UploadMode>
